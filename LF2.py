@@ -23,7 +23,7 @@ def sendMessage(message, phone_num):
 def elasticSearch(cuisine):
     region = 'us-east-1' # For example, us-west-1
     service = 'es'
-    awsauth = AWS4Auth('AKIAYLWJ724TVF32QFVR', 'uEyfTMhsE9yNsMcXmDU6rgDztEEq4Mq1ig0qWNCe', region, service)
+    awsauth = AWS4Auth('key', 'key', region, service)
     host = 'https://search-restaurants-zkflthtpnmeizyixegrluaylkq.us-east-1.es.amazonaws.com' 
     index = 'restaurants'
     url = host + '/' + index + '/_search'
